@@ -1,0 +1,213 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,10pt]{article}
+\newcommand{\up}[1]{\textsuperscript{#1}}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+    \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+    \item\small{
+            {#1 \vspace{-2pt}}
+    }
+}
+
+\newcommand{\resumeSubheading}[4]{
+    \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1}       & #2                 \\
+        \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+        \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+        \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+
+\begin{center}
+\textbf{\scshape Yvann LE FAY} \\ \vspace{1pt}
+\small +33 6 45 44 70 93 $|$ \href{mailto:yvann.lefay@ensae.fr}{yvann.lefay@ensae.fr} $|$
+\href{https://linkedin.com/in/yvann-le-fay/}{linkedin.com/in/yvann-le-fay/} $|$
+\href{https://github.com/hallelujahylefay}{github.com/hallelujahylefay}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+\resumeSubHeadingListStart
+\resumeSubheading
+{\'Ecole Normale Supérieure Paris-Saclay}{Orsay, France}{\textbf{M.Sc.} in Applied Mathematics and Machine Learning, MVA}{2023-2024}
+%\resumeItemListStart
+%\resumeItem{Optimal transport, reinforcement learning, bayesian machine learning, kernel methods, diffusion models}
+%\resumeItemListEnd
+\resumeSubheading
+{ENSAE}{Palaiseau, France}{\textbf{M.Eng.} in Statistics}{2020 - 2024}
+%\resumeItemListStart
+%\resumeItem{Statistics, econometrics, linear time series, functional analysis, optimization, stochastic calculus, mathematical finance}
+%\resumeItemListEnd
+\resumeSubheading
+{Paris-Saclay University}{Orsay, France}{\textbf{B.Sc.} in Fundamental Mathematics }
+{2020 - 2021}
+%\resumeItemListStart
+%\resumeItem{General algebra, differential calculus and geometry, complex analysis, ODE and dynamic systems}
+%\resumeItemListEnd
+\resumeSubheading{Lycée Henri-IV}{Paris, France}
+{Program in math, computer science and physics leading to nationwide entrance examinations to the \textit{Grandes Écoles}}{2018 - 2020}
+\resumeSubHeadingListEnd
+%-----------EXPERIENCE-----------
+\section{Experience}
+\resumeSubHeadingListStart
+\resumeSubheading
+{Aalto University - Simo Särkkä's group}{Espoo, Finland}
+{Research internship, supervised by Adrien Corenflos}{May 2023 - Sep. 2023}
+\resumeItemListStart
+\resumeItem{...}
+\resumeItemListEnd
+\resumeSubheading
+{INRIA - MIND}{Palaiseau, France}
+{Research internship, supervised by Demian Wassermann}{Jan. 2023 - Mar. 2023}
+\resumeItemListStart
+\resumeItem{Worked on variational inference methods for neuro-imaging.}
+\resumeItemListEnd
+\resumeSubheading
+{Lombard Odier Investment Managers' - Multi-Asset}{Geneva, Switzerland}
+{Off-cycle internship as a quantitative researcher, supervised by Serge Tabachnik}{Jun. 2022 - Nov. 2022}
+\resumeItemListStart
+%\resumeItem{Contributed to a proprietary scalable and highly modular framework for backtesting cross-asset trading strategies.}
+%\resumeItem{
+%Researched, implemented and backtested strategies (ARPs, Vol, Momentum).}
+%\resumeItem{
+%Implemented data mining procedures and modern regression methods.}
+%\resumeItem{Contributed to a statistics and reporting library.}
+\resumeItem{Received a renewal offer.}
+\resumeItemListEnd
+\resumeSubheading
+{Société Générale (CDN, Retail Banking)}{Paris, France}% 8\up{th}}
+{Internship in data science and risk analysis, supervised by Pierre Bouché}{Jun. 2021 - Aug. 2021}
+\resumeItemListStart
+\resumeItem{Backtested a credit decision tool, detected outliers in audit logs.}
+\resumeItem{Conducted a study on omnichannel customer behaviours as part of the fusion between Société Générale and Crédit du Nord.}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+%\section{Awards}
+%\resumeSubHeadingListStart
+%\resumeSubheading
+%{Regional math olympiads}{}{\href{http://euler.ac-versailles.fr/IMG/pdf/olympiades_equipe_2016_palmares.pdf}{euler.ac-versailles.fr/IMG/pdf/olympiades\_equipe\_2016\_palmares.pdf}}{2016}
+%\resumeItemListStart
+%\resumeItem{Rank 26\up{th}/1640.}
+%\resumeItemListEnd
+%\resumeSubheading
+%{Hall of fame - Microsoft Security Response Center}{}{\href{https://msrc.microsoft.com/update-guide/acknowledgement/archive}{msrc.microsoft.com/update-guide/acknowledgement/archive}}{2015}
+%\resumeItemListStart
+%\resumeItem{Three times acknowledged for having reported security vulnerabilities.}
+%\resumeItemListEnd
+%\resumeSubHeadingListEnd
+%-----------PROJECTS-----------
+%\section{Projects}
+%\resumeSubHeadingListStart
+%\resumeSubheading
+%{Bayesian SDE solver}{2023}{Companion-code of .... Written in JAX. \href{https://github.com/hallelujahylefay/bayesianSDEsolver}{github.com/hallelujahylefay/bayesianSDEsolver}}{}
+%\resumeSubHeadingListEnd
+%-----------PROGRAMMING SKILLS-----------
+\section{Programming Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+\small{\item{
+\textbf{Languages}{: Python, Ocaml, Wolfram Language, SQL} \\
+\textbf{Environments}{: Git, Linux, Bloomberg, Excel}\\
+\textbf{Libraries and others}{: JAX, PySpark, Dask, blp}
+
+}}
+\end{itemize}
+%-----------------------------------------
+\section{Others}
+\begin{itemize}[leftmargin=0.15in, label={}]
+\small{\item{
+\textbf{Languages}{: French, English} \\
+\textbf{Citizenships}{: French, Swiss}\\
+}}
+\end{itemize}
+%-------------------------------------------
+\end{document}
+
